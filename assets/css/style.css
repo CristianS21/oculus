@@ -646,3 +646,54 @@ main{
     grid-auto-rows: 145px;;
   }
 }
+
+
+/*SECCION 5 */
+
+.contenedor5 {
+  width: 100%;
+  height: 140px;
+  display: flex;
+  justify-content: space-between;
+ background-color: rgb(238, 57, 57);
+}
+
+.contenedor5 .c5_producto {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding-left: 20px;
+}
+
+.contenedor5 .c5_producto .c5_textos p{
+  width: 70%;
+  color: rgb(67, 67, 67);
+}
+
+.contenedor5 .c5_producto .c5_textos h2{
+  width: 70%;
+  color: rgb(212, 232, 248);
+}
+
+.contenedor5 .c5_producto .c5_img {
+    width: 150px;
+    filter: drop-shadow(5px 5px 5px);
+    margin-right: 15px;
+}
+
+.contenedor5 .c5_link{
+  display: flex;
+  align-items: center;
+  padding: 40px;
+}
+
+.contenedor5 .c5_link a  {
+  color: rgb(238, 57, 57);
+  text-decoration: none;
+  border: 1px rgb(238, 57, 57) solid;
+  padding: 8px 32px;
+  background-color: rgb(212, 232, 248);
+  font-weight: bold;
+  border-radius: 9px;
+  
+}
