@@ -55,7 +55,7 @@ header {
  
 }
 
-.contenedor_nav .navegador .nav_item:nth-child(3) {
+.contenedor_nav .navegador .nav_item:nth-child(4) {
   border: none;
 }
 
@@ -175,17 +175,31 @@ main{
 } 
 
 .contenedor_presentacion .presentacion_btn {
-    text-decoration: none;
-    border: solid 1px;
-    padding: 10px 20px;
-    background-color:rgb(84, 88, 221) ;
-    color: white;
+  box-shadow: 2px 2px 0px 0px #819196;
+	background:linear-gradient(to bottom, #437a99 5%, #1a5376 100%);
+	background-color:#437a99;
+	border:1px solid #c6c4cc;
+  border-radius: 5px;
+	display:inline-block;
+	cursor:pointer;
+	color:#a3c4cc;
+	font-family:Verdana;
+	font-size:17px;
+	padding:6px 29px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #e1e2ed;
   }
 
-  .contenedor_presentacion .presentacion_btn:hover {
-    color: rgb(84, 88, 221) ;
-    background-color: white ;
-  }
+  .contenedor_presentacion .presentacion_btn:hover{
+  background:linear-gradient(to bottom, #1a5376 5%, #437a99 100%);
+	background-color:#1a5376;
+}
+
+.contenedor_presentacion .presentacion_btn:active {
+  position: relative;
+  top: 1px;
+}
+  
 
           /*  - MEDIA 785 PX */
 
@@ -392,7 +406,7 @@ main{
   height: 140px;
   display: flex;
   justify-content: space-between;
- background-color: rgb(238, 57, 57);
+ background-color: #1a5276;
  margin-bottom: 70px;
 }
 
@@ -408,7 +422,7 @@ main{
   display: flex;
   flex-direction: column;
   width: 100%;
-  color: rgb(67, 67, 67);
+  color: rgb(151, 150, 150);
 }
 
 .contenedor5 .c5_producto .c5_textos h2{
@@ -431,15 +445,29 @@ main{
 }
 
 .contenedor5 .c5_link a{
-  color: rgb(238, 57, 57);
-  text-decoration: none;
-  border: 1px rgb(238, 57, 57) solid;
-  padding: 8px 22px;
-  background-color: rgb(212, 232, 248);
-  font-weight: bold;
-  border-radius: 9px;
+	box-shadow: 2px 2px 0px 0px #819196;
+	background:linear-gradient(to bottom, #437a99 5%, #1a5376 100%);
+	background-color:#437a99;
+	border:1px solid #c6c4cc;
+	display:inline-block;
+	cursor:pointer;
+	color:#a3c4cc;
+	font-family:Verdana;
+	font-size:17px;
+	padding:6px 29px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #e1e2ed;
 }
 
+.contenedor5 .c5_link a:hover{
+  background:linear-gradient(to bottom, #1a5376 5%, #437a99 100%);
+	background-color:#1a5376;
+}
+
+.contenedor5 .c5_link a:active {
+  position: relative;
+  top: 1px;
+}
 
 @media (max-width: 675px){
   
@@ -572,28 +600,24 @@ font-size: 3rem;
 }
 
 .contenedor-6b form button {
-  margin-bottom: 15px;
-  border: none;
-  box-shadow: inset 0px 1px 0px 0px #f5978e;
-  background: linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
-  background-color: #f24537;
-  border-radius: 6px;
-  border: 1px solid #d02718;
-  display: inline-block;
-  cursor: pointer;
-  color: #ffffff;
-  font-family: Arial;
-  font-size: 15px;
-  font-weight: bold;
-  padding: 6px 24px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px #810e05;
+	box-shadow: 2px 2px 0px 0px #819196;
+	background:linear-gradient(to bottom, #437a99 5%, #1a5376 100%);
+	background-color:#437a99;
+	border:1px solid #c6c4cc;
+	display:inline-block;
+	cursor:pointer;
+	color:#a3c4cc;
+	font-family:Verdana;
+	font-size:17px;
+	padding:6px 29px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #e1e2ed;
   margin-top: 25px;
 }
 
 .contenedor-6b form button:hover{
-  background: linear-gradient(to bottom, #c62d1f 5%, #f24537 100%);
-  background-color: #c62d1f;
+  background:linear-gradient(to bottom, #1a5376 5%, #437a99 100%);
+	background-color:#1a5376;
 }
 
 .contenedor_6b form button:active {
@@ -635,7 +659,7 @@ font-size: 3rem;
   font-weight: bold;
   width: 85%;
   line-height: 70px;
-  color: rgb(99, 99, 100) ;
+  color: #1a5276 ;
   padding-left: 30px;
   margin-top: 20px;
 }
@@ -691,7 +715,7 @@ list-style: none;
     font-weight: bold;
     width: 100%;
     line-height: 70px;
-    color: rgb(84, 88, 221) ;
+    color:  #1a5276  ;
     text-align: center;
   }
 
