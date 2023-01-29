@@ -376,16 +376,17 @@ main{
 }
 
 .contenedor5 .c5_producto {
+  width: 50%;
    display: flex;
    align-items: center;
    justify-content: flex-start;
-   padding-left: 20px;;
+   padding-left: 20px;
 }
 
 .contenedor5 .c5_producto .c5_textos {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 100%;
   color: rgb(67, 67, 67);
 }
 
@@ -404,14 +405,14 @@ main{
 .contenedor5 .c5_link{
   display: flex;
   align-items: center;
-  padding: 40px;
+  padding-right: 40px;
 }
 
 .contenedor5 .c5_link a  {
   color: rgb(238, 57, 57);
   text-decoration: none;
   border: 1px rgb(238, 57, 57) solid;
-  padding: 8px 32px;
+  padding: 8px 22px;
   background-color: rgb(212, 232, 248);
   font-weight: bold;
   border-radius: 9px;
