@@ -367,10 +367,10 @@ main{
   width: 100%;
   height: 100%;
   object-fit: cover;
-
 }
+
 .c4_img:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   border: #ebf1f4 6px solid;
 }
 
@@ -403,18 +403,26 @@ main{
     grid-template-columns: repeat(2,1fr);
   }
 
-  
 
+  .c4_item:nth-child(1){
+    grid-row-start: span 2;
+  }
+
+  .c4_item:nth-child(2){
+    grid-column-start: span 1;
+  }
+ 
 }
   @media (max-width:481px){
     .contenedor4 {
       display: grid;
       grid-template-columns: 100%;
     }
-  
+
+    .c4_item:nth-child(8){
+      grid-column-start: span 1;
+    }
 }
-
-
 
 /*SECCION 5 */
 
@@ -428,7 +436,7 @@ main{
 }
 
 .contenedor5 .c5_producto {
-  width: 50%;
+   width: 50%;
    display: flex;
    align-items: center;
    justify-content: flex-start;
@@ -446,13 +454,12 @@ main{
   width: 70%;
   color: rgb(212, 232, 248);
   margin-top: 6px;
-  
 }
 
 .contenedor5 .c5_producto .c5_img {
-    height:83%;
-    filter: drop-shadow(5px 5px 5px);
-    margin-right: 15px;
+  height:83%;
+  filter: drop-shadow(5px 5px 5px);
+  margin-right: 15px;
 }
 
 .contenedor5 .c5_link{
@@ -540,7 +547,6 @@ margin-bottom: 70px;
   align-items: center;
   justify-content: center;
   column-gap: 25px;
-
 }
 
 .cc6 .contenedor6 .tarjeta {
@@ -570,6 +576,30 @@ font-size: 38px;
   text-align: center;
   padding-top: 10px;
 }
+
+@media (max-width: 650px){
+  .cc6 .contenedor6 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+  } 
+
+  .cc6 {
+    height: auto;
+    margin-bottom: 80px;
+  }
+
+  .cc6 .contenedor6 .tarjeta {
+    row-gap: 0;
+    height: auto;
+    width: 70%;
+  }
+
+}
+
 
 
 /*CONTENEDOR 6B - CONTACTOS*/ 
@@ -645,16 +675,6 @@ font-size: 3rem;
   position: relative;
   top: 1px;
 }
-
-
-
-
-
-
-
-
-
-
 /*CONTENEDOR 7 */
 
 .cc_footer{
