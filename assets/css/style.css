@@ -230,8 +230,7 @@ main{
 
 .contenedor3 {
   width: 100%;
-  padding-top: 145px;
-
+  padding-top: 135px;
 }
 
 .contenedor3 .c3_1 {
@@ -342,15 +341,17 @@ main{
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 30px;
 }
 
 .titulo_2{
   font-size: 22px;
   color: rgb(38, 38, 42);
-  margin-top: 140px;
+  margin-top: 100px;
   margin-bottom: 40px;
   text-align: center;
   font-weight: bold;
+  padding-top: 30px;
 }
 
 
@@ -358,20 +359,27 @@ main{
   display: grid;
   grid-template-columns: repeat(4,25%);
   grid-auto-rows: 250px;
-  grid-gap: 4px;
-  margin-bottom: 50px;
-
 }
+
+.contenedor4 .c4_item{
+  overflow: hidden;
+  margin: 2px;
+}
+
+
 
 .c4_img {
   width: 100%;
   height: 100%;
+  transition: .5s;
   object-fit: cover;
 }
 
 .c4_img:hover {
-  transform: scale(1.05);
-  border: #ebf1f4 6px solid;
+  transform: scale(1.2);
+  
+  object-fit: cover;
+
 }
 
 
@@ -426,6 +434,10 @@ main{
 
 /*SECCION 5 */
 
+
+.c5 {
+  padding-top: 50px;
+}
 .contenedor5 {
   width: 100%;
   height: 140px;
@@ -433,6 +445,7 @@ main{
   justify-content: space-between;
  background-color: #1a5276;
  margin-bottom: 70px;
+
 }
 
 .contenedor5 .c5_producto {
