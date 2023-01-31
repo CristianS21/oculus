@@ -5,7 +5,8 @@
   margin: 0;
   box-sizing: border-box;
   font-family:  'Trebuchet MS', sans-serif;
-  /*scroll-margin: 100px;*/
+  scroll-padding: 50px;
+
 }
 
 html {
@@ -130,6 +131,7 @@ font-size: 1.5rem;
       color: #ebf1f4;
       background-color: rgba(0,0,0,0.4);
       padding-bottom: 5px;
+      position: fixed;
     } 
     
     
