@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,400;1,500&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family:   sans-serif;
+  font-family:  'Trebuchet MS', sans-serif;
+  /*scroll-margin: 100px;*/
 }
 
 html {
@@ -554,6 +556,125 @@ main{
   }
 }
 
+/*FORMULARIO*/
+
+#form_tasacion {
+	width: 400px;
+	margin: 50px auto;
+	text-align: center;
+	position: relative;
+}
+#form_tasacion fieldset {
+	background: white;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+	box-sizing: border-box;
+	width: 80%;
+	margin: 0 10%;
+}
+
+#form_tasacion input {
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	color: #f6f9fc;
+	font-size: 13px;
+}
+
+.form_titulo {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #2C3E50;
+	margin-bottom: 5px;
+}
+.form_subtitulo {
+	font-weight: normal;
+	font-size: 13px;
+	color: #666;
+	margin-bottom: 20px;
+}
+
+#evolucion_form {
+	margin-bottom: 30px;
+	overflow: hidden;
+	/*contador para numerar los pasos*/
+	counter-reset: step;
+}
+#evolucion_form li {
+	list-style-type: none;
+	color: rgb(70, 70, 70);
+	text-transform: uppercase;
+	font-size: 9px;
+	width: 33.33%;
+	float: left;
+	position: relative;
+
+}
+#evolucion_form li:before {
+	content: counter(step);
+	counter-increment: step;
+	width: 20px;
+	line-height: 20px;
+	display: block;
+	font-size: 10px;
+	color: #333;
+	border: solid 1px;
+	border-radius: 3px;
+	margin: 0 auto 5px auto;
+  z-index: 1;
+  background-color: white;
+}
+
+#evolucion_form li:after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: rgb(140, 138, 138);
+	position: absolute;
+	left: -50%;
+	top: 9px;
+	z-index:-1; /*linea atras de los números*/
+}
+#evolucion_form li:first-child:after {
+	/*conector innecesario antes del primer paso*/
+	content: none; 
+}
+
+#evolucion_form li.active:before,  #evolucion_form li.active:after{
+	background: rgba(26, 83, 118);
+	color: rgb(248, 252, 248);
+}
+
+ .form_btn {
+  box-shadow: 2px 2px 0px 0px #819681;
+	background:linear-gradient(to bottom, #437a99 5%, #1a5376 100%);
+	border:1px solid #c6c4cc;
+  border-radius: 5px;
+	display:inline-block;
+	cursor:pointer;
+	color:#a3c4cc;
+	font-family:Verdana;
+	font-size:14px;
+	padding:6px 32px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #e1e2ed;
+  margin-top: 12px;
+  }
+  
+	 .btn_form:hover{
+	  background:linear-gradient(to bottom, #1a5376 5%, #437a99 100%);
+	  background-color:#1a5376;
+  }
+  
+  .btn_form:active {
+	  position: relative;
+	  top: 1px;
+  }
 
 /*CONTENEDOR 6 */ 
 
@@ -833,7 +954,5 @@ list-style: none;
     .cc_footer .c7_derecha .c7_productos ul li{
         padding: 2px;
       }
+    }
   }
-
-}
-
